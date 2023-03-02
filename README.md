@@ -16,17 +16,17 @@
 
 ## Figma
 
-- **마켓칼리 시안**
-  <img src="./client/assets/finish/피그마 전체적인 부분 시안.png" width="300"/>
+- **마켓칼리 시안**<br/>
+  <img src="./client/assets/finish/피그마 전체적인 부분 시안.png" width="300"/><br/>
 
-### 📌 페이지별 주요 기능 화면
+### 📌 페이지별 주요 기능 화면<br/>
 
-- 회원가입 구현 (이메일과 비밀번호등 의 유효성을 확인, 주소 검색 api 이용)
-  <img src="./client/assets/finish/회원가입 구현.gif" width="300"/>
-- 로그인 구현 (회원가입을 통해 사용자(user)를 생성하고 관리,localStorage 이용)
-  <img src="./client/assets/finish/로그인 구현.gif" width="300"/>
-- 상품 상세 페이지 구현
-  <img src="./client/assets/finish/프로덕트 리스트.gif" width="300"/>
+- 회원가입 구현 (이메일과 비밀번호등 의 유효성을 확인, 주소 검색 api 이용)<br/>
+  <img src="./client/assets/finish/회원가입 구현.gif" width="300"/><br/>
+- 로그인 구현 (회원가입을 통해 사용자(user)를 생성하고 관리,localStorage 이용)<br/>
+  <img src="./client/assets/finish/로그인 구현.gif" width="300"/><br/>
+- 상품 상세 페이지 구현<br/>
+  <img src="./client/assets/finish/프로덕트 리스트.gif" width="300"/><br/>
 
 ---
 
