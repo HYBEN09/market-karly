@@ -16,8 +16,9 @@
 
 ## Figma
 
-- **마켓칼리 시안**<br/>
-  <img src="./client/assets/finish/피그마 전체적인 부분 시안.png" width="300"/><br/>
+### **마켓칼리 시안**<br/>
+
+<img src="./client/assets/finish/피그마 전체적인 부분 시안.png" width="300"/><br/>
 
 ### 📌 페이지별 주요 기능 화면<br/>
 
