@@ -579,6 +579,7 @@
   color: #666;
 }
 
+/* WHY KARLY */
 .product-detail__reasons {
   display: flex;
   flex-wrap: wrap;
@@ -589,6 +590,7 @@
 .product-detail__reasons dl {
   width: 315px;
   padding-top: 59px;
+  margin: 10px;
 }
 
 .product-detail__reasons dl dt {
@@ -600,39 +602,6 @@
   text-align: center;
 }
 
-.product-detail__reasons dl dt::before {
-  content: "";
-  display: block;
-  width: 40px;
-  height: 40px;
-  margin: 0 auto 10px;
-}
-
-.product-detail__reasons dl:nth-child(1) dt::before {
-  background: url(https://res.kurly.com/pc/ico/1910/01_check.svg) no-repeat 50%
-    50%;
-}
-
-.product-detail__reasons dl:nth-child(2) dt::before {
-  background: url(https://res.kurly.com/pc/ico/1910/02_only.svg) no-repeat 50%
-    50%;
-}
-
-.product-detail__reasons dl:nth-child(3) dt::before {
-  background: url(https://res.kurly.com/pc/ico/1910/03_cold.svg) no-repeat 50%
-    50%;
-}
-
-.product-detail__reasons dl:nth-child(4) dt::before {
-  background: url(https://res.kurly.com/pc/ico/1910/04_price.svg) no-repeat 50%
-    50%;
-}
-
-.product-detail__reasons dl:nth-child(5) dt::before {
-  background: url(https://res.kurly.com/pc/ico/1910/05_eco.svg) no-repeat 50%
-    50%;
-}
-
 .product-detail__reasons dl dd {
   padding-top: 22px;
   font-weight: 300;
@@ -640,4 +609,11 @@
   color: #333;
   line-height: 25px;
   text-align: center;
+}
+
+.why-karly_img {
+  display: block;
+  width: 40px;
+  height: 40px;
+  margin: 0 auto 10px;
 }
