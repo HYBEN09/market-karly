@@ -1,5 +1,5 @@
 import { handlerSetText } from "../sign/index.js";
-import { productDetails } from "../data/productDetail.js";
+import { productDetails } from "../data/productData.js";
 
 const productDetailElement = document.querySelector(".product-detail__reasons");
 
