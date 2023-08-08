@@ -75,7 +75,9 @@
         </div>
 
         <ul class="header--member">
-          <li class="register"><a href="./register.html" class="is-active">회원가입</a></li>
+          <li class="register">
+            <a href="./register.html" class="is-active">회원가입</a>
+          </li>
           <li class="signIn"><a href="./login.html">로그인</a></li>
           <li>
             <a href="/"
@@ -306,97 +308,385 @@
     </nav>
     <!-- navigation End -->
     <!--상품 정보-->
-    <section class="detail-info">
-      <figure class="image">
-        <img
-          alt="탱탱쫄면 상품사진"
-          class="product-img"
-          src="../client/assets/mainImg/noodle1.png"
-        />
-      </figure>
-      <article class="product-info">
-        <div class="product-info-heading">
-          <div type="text" class="product-heading__delivery">샛별 배송</div>
-          <div class="product-heading__title">
-            <h1 class="product-title-name">[풀무원] 탱탱쫄면 (4개입)</h1>
-            <h2 class="product-title-description">
-              튀기지 않아 부담 없는 매콤함
+
+    <div class="product-detail_box">
+      <main class="product-wrapper">
+        <div class="product-wrapper_img">
+          <img src="./assets/product01.png" alt=" " />
+        </div>
+        <section class="product-detail">
+          <div class="product-detail__delivery">샛별배송</div>
+          <div class="product-detail__info">
+            <div class="product-detail__title-group">
+              <h1>[남도분식] 라볶이</h1>
+            </div>
+            <h2 class="product-detail__description">
+              라면과 함께 호로록 즐기는
             </h2>
           </div>
-          <h2 ]]]class="product-heading__price">
-            <span class="product-price">4,980</span>원
+          <h2 class="product-detail__price">
+            <span class="product-detail__discount-rate">10%</span
+            ><span class="product-detail__original-price">5,400</span
+            ><span class="product-detail__currency">원</span>
           </h2>
-          <span class="product-heading__login"
-            >로그인 후, 적립 혜택이 제공됩니다.</span
-          >
-        </div>
+          <span class="product-detail__karly-check"
+            >6,000원<img
+              src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjEiIGhlaWdodD0iMjEiIHZpZXdCb3g9IjAgMCAyMSAyMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGNpcmNsZSBzdHJva2U9IiNDQ0MiIHN0cm9rZS13aWR0aD0iMS4yIiBjeD0iMTAuNSIgY3k9IjEwLjUiIHI9IjYuOSIvPgogICAgICAgIDxwYXRoIGQ9Ik03LjggOC43MzJoMS4zOTdjLjA0OC0uNzI2LjU0MS0xLjE5IDEuMzA4LTEuMTkuNzUgMCAxLjI1LjQ0NyAxLjI1IDEuMDY1IDAgLjU0LS4yMS44NS0uODE0IDEuMjRsLS4xNzQuMTFjLS44Mi40ODEtMS4xNjUgMS4wMTctMS4xMTIgMS45MDhsLjAwNi40MDVoMS4zOHYtLjM0YzAtLjU4OC4yMi0uODkxLjk5OC0xLjM0OS44MS0uNDgyIDEuMjYxLTEuMTE4IDEuMjYxLTIuMDI3IDAtMS4zMTUtMS4wODgtMi4yNTQtMi43MTctMi4yNTQtMS43NjYgMC0yLjczNSAxLjAyMy0yLjc4MyAyLjQzMnptMi42MTYgNi4zNzRjLS41OTQgMC0uOTg3LS4zNzUtLjk4Ny0uOTQ1IDAtLjU3Ny4zOTMtLjk1Mi45ODctLjk1Mi42MDcgMCAuOTg3LjM3NS45ODcuOTUyIDAgLjU3LS4zOC45NDUtLjk4Ny45NDV6IiBmaWxsPSIjQ0NDIiBmaWxsLXJ1bGU9Im5vbnplcm8iLz4KICAgIDwvZz4KPC9zdmc+Cg=="
+              alt="컬리판매가 자세히 보기"
+              class="product-detail__karly-check-img"
+          /></span>
+          <div class="product-detail__login-info">
+            로그인 후, 적립 혜택이 제공됩니다.
+          </div>
 
-        <div class="product-more">
-          <dl class="product-more-set">
-            <dt class="more__title">배송</dt>
-            <dd class="more__info">
-              <div type="text" class="more__info__kindOf">샛별배송</div>
-              <div type="text" class="more__info__contents">
-                23시 전 주문 시 내일 아침 7시 전 도착 <br />(대구 부산 울산
-                샛별배송 운영시간 별도 확인)
-              </div>
-            </dd>
-          </dl>
-          <dl class="product-more-set">
-            <dt class="more__title">판매자</dt>
-            <dd class="more__info">칼리</dd>
-          </dl>
-          <dl class="product-more-set">
-            <dt class="more__title">포장타입</dt>
-            <dd class="more__info">
-              <div type="text" class="more__info__kindOf">상온 (종이포장)</div>
-              <div type="text" class="more__info__contents">
-                택배배송은 에코 포장이 스티로폼으로 대체됩니다.
-              </div>
-            </dd>
-          </dl>
-          <dl class="product-more-set">
-            <dt class="more__title">판매단위</dt>
-            <dd class="more__info">1봉</dd>
-          </dl>
-          <dl class="product-more-set">
-            <dt class="more__title">중량/용량</dt>
-            <dd class="more__info">123g<sup class="multi">*</sup>4봉</dd>
-          </dl>
-          <dl class="product-more-set">
-            <dt class="more__title">원산지</dt>
-            <dd class="more__info">상세페이지 별도표기</dd>
-          </dl>
-          <dl class="product-more-set">
-            <dt class="more__title">알레르기정보</dt>
-            <dd class="more__info">
-              -대두, 밀, 쇠고기 함유 <br />-계란, 우유, 메밀, 땅콩, 고등어, 게,
-              돼지고기, 새우, 복숭아, 토마토, 아황산류, 호두, 잣, 닭고기,
-              오징어, 조개류(굴, 전복, 홍합 포함)를 사용한 제품과 같은
-              제조시설에서 제조
-            </dd>
-          </dl>
-
-          <div class="buy">
-            <div class="select">
-              <dl class="product-more-set">
-                <dt class="more__title">상품선택</dt>
-                <dd class="more__info">
-                  <div class="more__info-selectWrapper">
-                    <div class="selectWrapper-left">
-                      <div class="selectWrapper-left__text">
-                        [풀무원] 탱탱쫄면(4개입)
+          <div class="product-detail__info-list">
+            <dl class="product-detail__info-item">
+              <dt>배송</dt>
+              <dd class="product-detail__info-item-detail">
+                <p>샛별배송</p>
+                <span class="product-detail__delivery-info">
+                  23시 전 주문 시 내일 아침 7시 전 도착 (대구·부산·울산 샛별배송
+                  운영시간 별도 확인)
+                </span>
+              </dd>
+            </dl>
+            <dl class="product-detail__info-item">
+              <dt>판매자</dt>
+              <dd class="product-detail__info-item-detail">
+                <p>컬리</p>
+              </dd>
+            </dl>
+            <dl class="product-detail__info-item">
+              <dt>포장타입</dt>
+              <dd class="product-detail__info-item-detail">
+                <p class="product-detail__packaging-type">냉동 (종이포장)</p>
+                <p>택배배송은 에코 포장이 스티로폼으로 대체됩니다.</p>
+              </dd>
+            </dl>
+            <dl class="product-detail__info-item">
+              <dt>판매단위</dt>
+              <dd class="product-detail__info-item-detail">
+                <p>1팩</p>
+              </dd>
+            </dl>
+            <dl class="product-detail__info-item">
+              <dt>중량/용량</dt>
+              <dd class="product-detail__info-item-detail">
+                <p>606g</p>
+              </dd>
+            </dl>
+            <dl class="product-detail__info-item">
+              <dt>원산지</dt>
+              <dd class="product-detail__info-item-detail">
+                <p>상품설명/상세정보 참조</p>
+              </dd>
+            </dl>
+            <dl class="product-detail__info-item product-detail__allergy-info">
+              <dt>알레르기정보</dt>
+              <dd class="product-detail__info-item-detail">
+                <ul class="product-detail__allergy-text">
+                  <li>- 말랑말랑 밀떡볶이: 밀 함유</li>
+                  <li>- 부산어묵 상천: 대두, 밀</li>
+                  <li>- 라볶이: 밀, 쇠고기, 닭고기, 우유, 대두, 조개류</li>
+                  <li>- 라면사리: 밀 함유</li>
+                </ul>
+              </dd>
+            </dl>
+            <dl class="product-detail__info-item">
+              <dt>유통기한(또는 소비기한)정보</dt>
+              <dd class="product-detail__info-item-detail">
+                <p>수령일 포함 최소 80일 이상 남은 제품으로 보내드립니다.</p>
+              </dd>
+            </dl>
+            <dl class="product-detail__info-item">
+              <dt>안내사항</dt>
+              <dd class="product-detail__info-item-detail">
+                <ul class="product-detail__notice-text">
+                  <li>
+                    [남도분식] 라볶이 - 2023년 8월 14일 23시 주문 건까지,
+                    유통기한 2023년 10월 5일 상품 출고
+                  </li>
+                  <li>
+                    [남도분식] 라볶이 - 2023년 8월 14일 23시 주문건까지,
+                    유통기한 2023년 10월 6일 상품 출고
+                  </li>
+                </ul>
+              </dd>
+            </dl>
+          </div>
+          <div class="product-detail__cart-info">
+            <div class="product-detail__option-group">
+              <dl class="product-detail__option-item">
+                <dt class="product-detail__option-title">상품선택</dt>
+                <dd class="product-detail__option-detail">
+                  <div class="product-detail__cart-item">
+                    <div class="product-detail__name-group">
+                      <span class="product-detail__cart-item-name"
+                        >[남도분식] 라볶이</span
+                      >
+                    </div>
+                    <div class="product-detail__quantity-group">
+                      <div class="product-detail__quantity-control-group">
+                        <button
+                          type="button"
+                          aria-label="수량내리기"
+                          disabled=""
+                        >
+                          -
+                        </button>
+                        <div class="product-detail__quantity-number">1</div>
+                        <button type="button" aria-label="수량올리기">+</button>
                       </div>
-                      <div class="플러스 마이너스박스"></div>
+                      <div>
+                        <span class="product-detail__original-price-text"
+                          >6,000원</span
+                        ><span class="product-detail__discount-price-text"
+                          >5,400원</span
+                        >
+                      </div>
                     </div>
                   </div>
                 </dd>
               </dl>
             </div>
+            <div class="product-detail__total-info">
+              <div class="product-detail__price-group">
+                <div class="product-detail__product-total-info">
+                  <span class="product-detail__product-total-info-title"
+                    >총 상품금액 :</span
+                  ><span class="product-detail__product-total-price-value"
+                    >5,400</span
+                  ><span class="product-detail__currency">원</span>
+                </div>
+                <div class="product-detail__product-point-info">
+                  <span class="product-detail__product-point-title">적립</span
+                  ><span class="product-detail__product-point-text"
+                    >로그인 후, 적립 혜택 제공</span
+                  >
+                </div>
+              </div>
+              <div class="product-detail__cart-button-group">
+                <button
+                  class="product-detail__cart-button"
+                  type="button"
+                  width="56"
+                  height="56"
+                  radius="3"
+                >
+                  <span>장바구니 담기</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <nav class="product-detail-navigation">
+        <ul>
+          <li>
+            <a>
+              <span class="product-detail-navigation__name">상품설명</span>
+            </a>
+          </li>
+          <li>
+            <a>
+              <span class="product-detail-navigation__name">상세정보</span>
+            </a>
+          </li>
+          <li>
+            <a>
+              <span class="product-detail-navigation__name"
+                >후기<span class="product-detail-navigation__count"
+                  >(370)</span
+                ></span
+              >
+            </a>
+          </li>
+          <li class="product-detail-navigation__item">
+            <a class="product-detail-navigation__link">
+              <span class="product-detail-navigation__name">문의</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div id="description" class="product-detail-description">
+        <div class="description__content">
+          <div>
+            <div class="goods_wrap">
+              <div>
+                <div>
+                  <img
+                    src="https://img-cf.kurly.com/shop/data/goodsview/20230404/gv00000615245_1.jpg"
+                  />
+                </div>
+
+                <!--  Karly's Description-->
+                <div class="description__context context last">
+                  <h3>
+                    <small>라면과 함께 호로록 즐기는</small>
+                    [남도분식] 라볶이
+                  </h3>
+                  <p class="description__words">
+                    추억의 맛을 재해석하는 남도분식의 레시피로 완성한, 라볶이를
+                    소개할게요. 라면사리와 잘 어울리는 매콤달콤한 소스를 함께
+                    담아 조화로운 맛을 자랑해요. 말랑말랑한 밀떡과 고소한 어묵도
+                    남도분식의 레시피 그대로 완성해 믿을 수 있답니다. 촉촉한
+                    소스에 면발을 돌돌 말아 떡, 어묵과 함께 한 입에 즐겨 보세요.
+                    떡볶이 만으로는 어딘가 허전해 꼭 면 사리를 추가하셨던
+                    분이라면, 무척 만족스러우실 거예요.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Karly's Check Point -->
+              <div class="description__goods-point">
+                <h3>
+                  <span>Karly's Check Point</span>
+                </h3>
+                <div class="description__context context last">
+                  <div class="description__pic pic">
+                    <img
+                      src="https://img-cf.kurly.com/shop/data/goodsview/20230404/gv00000615247_1.jpg"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <!-- Karly’s Pick -->
+              <div class="goods_pick">
+                <h3>
+                  <span>Karly’s Pick</span>
+                </h3>
+                <div class="description__context context last">
+                  <div class="description__pic pic">
+                    <img
+                      src="https://img-cf.kurly.com/shop/data/goodsview/20230404/gv40000615251_1.jpg"
+                    />
+                  </div>
+                  <p class="description__words">
+                    <strong><span>라볶이</span></strong>
+                    <b class="description__list-title">・구성 </b>: ①밀떡(250g),
+                    ②어묵(96g), ③라면(110g), ④소스(150g)<br />
+                    <b class="description__list-title">・특징</b>
+                    : 매콤달콤한 추억의 라볶이를 간편하게 완성할 수 있는
+                    키트입니다.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Karly’s Tip -->
+              <div class="goods_tip">
+                <h3>
+                  <span>Karly’s Tip</span>
+                </h3>
+                <div class="tip_box">
+                  <div class="description__context">
+                    <p>
+                      <strong class="description__sub-title">보관법</strong>
+                      -18ºC 이하에서 냉동 보관하세요.
+                    </p>
+                    <p>
+                      <strong class="description__sub-title">조리법</strong>
+                      1. 물 500mL, 떡, 어묵, 소스를 넣고 떡이 떠오를 때까지 잘
+                      저어가며 끓여주세요.
+                      <br />
+                      2. 떡이 떠오르면 라면 사리를 넣고 3분 정도 끓여주세요.
+                      <br />
+                      <b class="description__tip">Tip. </b>대파 등의 야채를
+                      곁들이면 더욱 맛있게 즐길 수 있어요.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- About Brand -->
+              <div class="about_brand">
+                <h3>
+                  <span>About Brand</span>
+                </h3>
+                <div class="description__context last">
+                  <div class="description__context-about context_about">
+                    <div class="pic">
+                      <img
+                        src="https://img-cf.kurly.com/shop/data/goodsview/20230404/gv30000615259_1.jpg"
+                      />
+                    </div>
+                    <p class="description__words">
+                      클래식하면서 트렌디한 인테리어로 시선을 사로잡는 이곳,
+                      남도분식에서는 찌그러진 양은 냄비와 초록색 멜라민 접시도
+                      특별해지죠. 서촌의 골목에서 시작한 남도분식은 남도의
+                      다양한 지역에서 영감을 얻은 메뉴로 새로운 분식 트렌드를
+                      이끌어 가고 있는데요. 시래기를 넣어 먹는 떡볶이부터
+                      상추튀김, 비빔당면 등, 그 지역에서만 맛볼 수 있었던 메뉴를
+                      남도분식만의 레시피로 재해석했답니다. 익숙하면서도 특별한
+                      맛으로 추억을 지켜나가는 남도분식을 컬리에서 만나보세요.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- WHY KARLY -->
+            <div class="product-detail__why">
+              <div class="product-detail__section-title">
+                <span class="product-detail__section-title-text"
+                  >WHY KARLY</span
+                >
+              </div>
+              <div class="product-detail__reasons">
+                <dl>
+                  <dt>깐깐한 상품위원회</dt>
+                  <dd>
+                    나와 내 가족이 먹고 쓸 상품을 고르는
+                    <br />마음으로 매주 상품을 직접 먹어보고, <br />경험해보고
+                    성분, 맛, 안정성 등 다각도의 <br />기준을 통과한 상품만을
+                    판매합니다.
+                  </dd>
+                </dl>
+
+                <dl>
+                  <dt>차별화된 Karly Only 상품</dt>
+                  <dd>
+                    전국 각지와 해외의 훌륭한 생산자가<br />믿고 선택하는
+                    파트너, 컬리.<br />3천여 개가 넘는 컬리 단독 브랜드,
+                    스펙의<br />Karly Only 상품을 믿고 만나보세요.
+                  </dd>
+                </dl>
+
+                <dl>
+                  <dt>신선한 풀콜드체인 배송</dt>
+                  <dd>
+                    온라인 업계 최초로 산지에서 문 앞까지<br />상온, 냉장, 냉동
+                    상품을 분리 포장 후<br />최적의 온도를 유지하는 냉장 배송
+                    시스템,<br />풀콜드체인으로 상품을 신선하게 전해드립니다.
+                  </dd>
+                </dl>
+
+                <dl>
+                  <dt>고객, 생산자를 위한 최선의 가격</dt>
+                  <dd>
+                    매주 대형 마트와 주요 온라인 마트의 가격<br />변동 상황을
+                    확인해 신선식품은 품질을<br />타협하지 않는 선에서 최선의
+                    가격으로,<br />가공식품은 언제나 합리적인 가격으로<br />정기
+                    조정합니다.
+                  </dd>
+                </dl>
+
+                <dl>
+                  <dt>환경을 생각하는 지속 가능한 유통</dt>
+                  <dd>
+                    친환경 포장재부터 생산자가 상품에만<br />집중할 수 있는
+                    직매입 유통구조까지,<br />지속 가능한 유통을 고민하며 컬리를
+                    있게<br />하는 모든 환경(생산자, 커뮤니티, 직원)이<br />더
+                    나아질 수 있도록 노력합니다.
+                  </dd>
+                </dl>
+              </div>
+            </div>
           </div>
         </div>
-      </article>
-    </section>
+      </div>
+    </div>
+
     <!--상품 상세정보-->
     <!--상품 후기-->
     <!--상품 문의-->
