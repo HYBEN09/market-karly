@@ -71,7 +71,9 @@ function generateBestItem(product) {
   return /*html*/ `
      <a href="#">
       <figure class="best-img_wrapper">
+       <div class="image-container">
         <img src="${product.imageUrl}" alt="" class="best-product_img" />
+      </div>
         <button class="best-cart_btn">
           <img
             src="../../assets/Icon/cart.png"

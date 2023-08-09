@@ -217,10 +217,23 @@
   position: relative;
 }
 
+.image-container {
+  position: relative; /* 상대적 위치 지정 */
+  overflow: hidden; /* 내부 내용 넘치는 부분 숨김 */
+}
+
+.image-container:hover .best-product_img {
+  transform: scale(1.1); /* 내부 이미지를 1.1배 확대 */
+}
+
 .best-product_img {
   position: relative;
   width: 249px;
   height: 320px;
+  transition: transform 0.3s ease-in-out; /* 호버 효과 부드럽게 적용 */
+  display: block; /* 이미지 블록 요소로 표시 */
+  max-width: 100%; /* 이미지 최대 너비 100% */
+  height: auto;
 }
 
 .best-cart_btn {
