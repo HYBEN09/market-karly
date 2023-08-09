@@ -118,10 +118,6 @@
   font-weight: 400;
 }
 
-.active:after {
-  content: url("../../assets/mainImg/close.svg");
-}
-
 .more:after {
   content: url("../../assets/mainImg/more.svg");
   margin-left: 5px;

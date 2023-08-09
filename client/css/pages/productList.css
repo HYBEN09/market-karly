@@ -1,0 +1,346 @@
+.product-list {
+  position: relative;
+  display: flex;
+  width: 1050px;
+  margin: 50px auto;
+}
+
+.accordion {
+  position: sticky;
+  width: 220px;
+  flex-shrink: 0;
+  height: 100%;
+  max-height: calc(100vh - 100px);
+  top: 80px;
+  margin-right: 47px;
+}
+
+.product-list_filter {
+  position: sticky;
+  top: 0px;
+  display: flex;
+  z-index: 20;
+  background-color: rgb(255, 255, 255);
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgb(238, 238, 238);
+  line-height: 20px;
+}
+
+.product-list_filter span {
+  font-weight: 500;
+  font-size: 15px;
+  color: rgb(51, 51, 51);
+}
+
+.product-list_filter button {
+  display: flex;
+  align-items: center;
+  pointer-events: none;
+  font-size: 14px;
+  color: #333;
+  background-color: transparent;
+  border: none;
+}
+
+.toggle-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 52px;
+  overflow: hidden;
+  font-size: 14px;
+  color: #333;
+  background-color: transparent;
+  border: none;
+}
+
+.category-title {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: rgb(51, 51, 51);
+}
+
+.category-title:after {
+  content: url("../../assets/mainImg/Vector.svg");
+  color: var(--white);
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+  position: absolute;
+  right: 0;
+}
+
+.product-list_nav {
+  opacity: 0;
+  display: none;
+}
+
+.product-list_nav.active {
+  opacity: 1;
+  display: block;
+}
+
+.toggle-btn.active .category-title:after {
+  content: url("../../assets/mainImg/close.svg");
+}
+
+.product-list li {
+  display: flex;
+  margin-top: 9px;
+  list-style: none;
+  margin-bottom: 18px;
+}
+
+.product-list li a {
+  display: flex;
+  align-items: center;
+}
+
+.product-list__check-btn {
+  display: flex;
+  align-items: center;
+  margin-right: 8px;
+  font-size: 14px;
+  color: #333;
+  overflow: visible;
+  background-color: transparent;
+  border: none;
+}
+
+.product-list_nav {
+  max-height: 100vh;
+  opacity: 1;
+  transition: all 250ms cubic-bezier(0.83, 0, 0.17, 1) 0s;
+  height: auto;
+  overflow: hidden;
+}
+
+.filter_accordion-list input {
+  display: flex;
+  align-items: center;
+  margin: 0 8px;
+}
+
+.filter_accordion-amount {
+  flex-shrink: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: rgb(204, 204, 204);
+}
+
+.category-wrapper {
+  border-bottom: 1px solid rgb(238, 238, 238);
+}
+
+.filter_accordion-list:last-of-type {
+  margin-bottom: 21px;
+}
+
+/* best -2 */
+
+.best-wrapper {
+  width: 100%;
+}
+
+.best-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 20px;
+  line-height: 20px;
+}
+
+.sort-option.active {
+  letter-spacing: -0.3px;
+  font-weight: 600;
+  color: rgb(51, 51, 51);
+  cursor: default;
+}
+
+.best-total_amount {
+  font-size: 14px;
+  font-weight: 500;
+  color: rgb(51, 51, 51);
+}
+
+.best-list {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.best-list li {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-left: 8px;
+  font-size: 14px;
+  color: #898989;
+}
+
+.best-list li a:not(:first-child) {
+  letter-spacing: -0.3px;
+  cursor: pointer;
+}
+
+.best-list li:first-child a {
+  letter-spacing: -0.3px;
+  font-weight: 500;
+  color: rgb(51, 51, 51);
+  cursor: default;
+}
+
+.best-list li:not(:first-child) a::before {
+  content: "";
+  display: inline-flex;
+  width: 1px;
+  height: 10px;
+  margin-right: 8px;
+  background-color: rgb(226, 226, 226);
+}
+
+.best-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 249px);
+  gap: 31px 18px;
+  width: 100%;
+}
+
+.best-img_wrapper {
+  position: relative;
+}
+
+.best-product_img {
+  position: relative;
+  width: 249px;
+  height: 320px;
+}
+
+.best-cart_btn {
+  position: absolute;
+  right: 16px;
+  bottom: 150px;
+  background-color: transparent;
+  border: none;
+}
+
+.best-img_container {
+  padding: 14px 10px 0px 0px;
+}
+
+.best__delivery {
+  font-size: 14px;
+  color: rgb(153, 153, 153);
+  line-height: 19px;
+  letter-spacing: -0.5px;
+}
+
+.best__name {
+  max-height: 58px;
+  font-size: 16px;
+  line-height: 160%;
+  font-weight: 400;
+  letter-spacing: normal;
+  display: -webkit-box;
+  overflow: hidden;
+  word-break: break-all;
+  white-space: normal;
+}
+
+.best__price {
+  font-weight: 800;
+  font-size: 21px;
+  line-height: 24px;
+  white-space: nowrap;
+  letter-spacing: -0.5px;
+  padding-top: 4px;
+}
+
+.best__info {
+  padding-top: 4px;
+  font-size: 12px;
+  color: #898989;
+  line-height: 18px;
+  letter-spacing: normal;
+  font-weight: 400;
+  line-height: 160%;
+  overflow: hidden;
+  word-break: break-all;
+  white-space: normal;
+}
+
+.best-message {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  padding: 12px 10px 0px 0px;
+  cursor: default;
+}
+
+.best__only {
+  padding: 2px 8px 4px;
+  border-radius: 4px;
+  background-color: rgb(244, 244, 244);
+  font-weight: 500;
+  font-size: 12px;
+  color: #5f0080;
+  line-height: 16px;
+}
+
+.best__limit {
+  padding: 2px 8px 4px;
+  border-radius: 4px;
+  background-color: rgb(244, 244, 244);
+  font-weight: 500;
+  font-size: 12px;
+  color: #333;
+  line-height: 16px;
+}
+
+/* 페이지네이션 */
+.best-pagenation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 45px;
+}
+
+.pg-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-top: 1px solid rgb(221, 221, 221);
+  border-right: 1px solid rgb(221, 221, 221);
+  border-bottom: 1px solid rgb(221, 221, 221);
+  border-left: none;
+  cursor: pointer;
+  background: transparent;
+}
+
+.pg-btn:first-of-type {
+  border-left: 1px solid rgb(221, 221, 221);
+}
+
+.price_info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.best__discount-rate {
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 24px;
+  white-space: nowrap;
+  letter-spacing: -0.5px;
+  color: rgb(250, 98, 47);
+}
