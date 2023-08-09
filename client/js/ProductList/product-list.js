@@ -76,7 +76,7 @@ function generateBestItem(product) {
       </div>
         <button class="best-cart_btn">
           <img
-            src="../../assets/Icon/cart.png"
+            src="../../assets/icons/cart.png"
             alt="장바구니 아이콘"
             class="best-cart_img"
           />
