@@ -47,7 +47,7 @@ export const productsList = [
     showBestMessage: true,
   },
   {
-    id: "galbi-7",
+    id: "bulgogi-7",
     imageUrl: "../../assets/product/product07.png",
     productName: "[KF365] 양념 소불고기 1kg (냉장)",
     price: "18,900원",
@@ -55,7 +55,7 @@ export const productsList = [
     showBestMessage: true,
   },
   {
-    id: "galbi-5",
+    id: "egg-8",
     imageUrl: "../../assets/product/product08.png",
     productName: "[KF365] 1+등급 무항생제 특란 20구",
     price: "7,300원",
@@ -63,11 +63,10 @@ export const productsList = [
     showBestMessage: true,
   },
   {
-    id: "galbi-5",
+    id: "grape-9",
     imageUrl: "../../assets/product/product09.png",
-    productName: "[우주] 프리미엄 손질 생새우살 200g (냉동)(26/30사이즈)",
-    price: "6,900원",
-    discountRate: 0.17,
-    productInfo: "두루 사용하기 좋은 간편 새우",
+    productName: "향기가득 샤인머스캣 1송이",
+    price: "12,900원",
+    productInfo: "연두빛으로 영근 달콤함 한 알",
   },
 ];

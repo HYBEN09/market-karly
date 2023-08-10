@@ -8,6 +8,7 @@ const productList = document.querySelector(".product-list_nav");
 const bestList = document.querySelector(".best-container");
 const cartPopup = document.querySelector(".cart-popup_wrapper");
 const cartCancelBtn = document.querySelector(".cart-popup_cancel-button");
+const cartWrapper = document.querySelector(".cart-popup_wrapper");
 
 // 메뉴 클릭 토글 함수
 function toggleListNav(e) {
@@ -30,7 +31,6 @@ function toggleNavActive(item, otherItems) {
   item.classList.toggle("nav-active");
 }
 
-// 메뉴 클릭 토글 함수를 버튼에 각각 추가
 function initializeToggleButtons() {
   toggleButtons.forEach((button) => {
     button.addEventListener("click", toggleListNav);
@@ -127,16 +127,78 @@ function initializeProductList() {
   });
 }
 
+function generateCartPopup(item) {
+  if (!cartWrapper.querySelector(".cart-popup")) {
+    const cartPopup = /*html*/ `
+         <div class="cart-popup muiDialog-paper" role="document">
+            <div class="cart-popup_content">
+              <div class="cart-popup_content-top">
+                <h2 id="cartPopupTitle" class="cart-popup_content-title">
+                  <span>[풀무원] 탱탱쫄면 (4개입)</span>
+                </h2>
+                <div class="cart-popup_content-count">
+                  <p class="cart-popup_product">4,980원</p>
+                  <div class="cart-popup_count-box">
+                    <button class="cart-popup_count-minus">-</button>
+                    <span
+                      class="cart-popup_count-total"
+                      aria-live="polite"
+                      aria-atomic="true"
+                      >1</span
+                    >
+                    <button class="cart-popup_count-plus">+</button>
+                  </div>
+                </div>
+              </div>
+              <div class="cart-popup_content-middle">
+                <div class="cart-popup_totals">
+                  <p class="cart-popup_sum">합계</p>
+                  <p><span class="cart-popup_price">4,980</span>원</p>
+                </div>
+
+                <div class="cart-popup_info">
+                  <p>
+                    <span class="save-tag cart-popup_save-tag">적립</span> 구매
+                    시 5원 적립
+                  </p>
+                </div>
+              </div>
+              <div class="cart-popup_content-bottom">
+                <div class="cart-popup_buttons">
+                  <button
+                    type="button"
+                    class="cart-cancel cart-popup_cancel-button"
+                  >
+                    취소
+                  </button>
+                  <button type="button" class="cart-add cart-popup_add-button">
+                    장바구니 담기
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+    `;
+    cartWrapper.innerHTML += cartPopup;
+  }
+}
+
 // 팝업을 보여주는 함수
 function showCartPopup() {
+  generateCartPopup();
+
+  const cartPopup = document.querySelector(".cart-popup_wrapper");
   cartPopup.classList.add("show");
+
   // 팝업 외부 클릭 시 팝업 닫기
   cartPopup.addEventListener("click", (event) => {
     if (event.target === cartPopup) {
       hideCartPopup();
     }
   });
+
   // 취소 버튼 클릭 시 팝업 닫기
+  const cartCancelBtn = document.querySelector(".cart-popup_cancel-button");
   cartCancelBtn.addEventListener("click", hideCartPopup);
 }
 
@@ -145,7 +207,8 @@ function hideCartPopup() {
   cartPopup.classList.remove("show");
 }
 
-// 카트 버튼 초기화 함수
+generateCartPopup();
+
 function initializeCartButtons() {
   const cartBtns = document.querySelectorAll(".best-cart_btn");
   cartBtns.forEach((cartBtn) => {
