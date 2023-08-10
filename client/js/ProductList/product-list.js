@@ -6,6 +6,8 @@ const sortOptions = document.querySelectorAll(".sort-option");
 const toggleButtons = document.querySelectorAll(".toggle-btn");
 const productList = document.querySelector(".product-list_nav");
 const bestList = document.querySelector(".best-container");
+const cartPopup = document.querySelector(".cart-popup_wrapper");
+const cartCancelBtn = document.querySelector(".cart-popup_cancel-button");
 
 // 메뉴 클릭 토글 함수
 function toggleListNav(e) {
@@ -125,8 +127,35 @@ function initializeProductList() {
   });
 }
 
+// 팝업을 보여주는 함수
+function showCartPopup() {
+  cartPopup.classList.add("show");
+  // 팝업 외부 클릭 시 팝업 닫기
+  cartPopup.addEventListener("click", (event) => {
+    if (event.target === cartPopup) {
+      hideCartPopup();
+    }
+  });
+  // 취소 버튼 클릭 시 팝업 닫기
+  cartCancelBtn.addEventListener("click", hideCartPopup);
+}
+
+// 팝업을 닫는 함수
+function hideCartPopup() {
+  cartPopup.classList.remove("show");
+}
+
+// 카트 버튼 초기화 함수
+function initializeCartButtons() {
+  const cartBtns = document.querySelectorAll(".best-cart_btn");
+  cartBtns.forEach((cartBtn) => {
+    cartBtn.addEventListener("click", showCartPopup);
+  });
+}
+
 // ---------------------------------------------------------------
 initializeToggleButtons();
 initializeListItems();
 initializeSortOptions();
 initializeProductList();
+initializeCartButtons();

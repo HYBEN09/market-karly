@@ -357,3 +357,157 @@
   letter-spacing: -0.5px;
   color: rgb(250, 98, 47);
 }
+
+/* 장바구니 팝업 */
+.cart-popup_wrapper {
+  display: none; /* 초기에는 보이지 않도록 설정 */
+  opacity: 0; /* 초기에는 투명도 0으로 설정 */
+  transition: opacity 0.3s ease-in-out;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.cart-popup_wrapper.show {
+  display: flex;
+  opacity: 1;
+}
+
+.cart-popup {
+  background-color: white;
+  width: 440px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+}
+
+.cart-popup_content-title {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.cart-popup_content-title span {
+  font-size: 14px;
+  line-height: 19px;
+  color: rgb(51, 51, 51);
+  display: -webkit-box;
+  overflow: hidden;
+  word-break: break-all;
+  white-space: normal;
+}
+
+.cart-popup_content-count {
+  display: flex;
+  align-items: center;
+  margin: 15px 0;
+}
+
+.cart-popup_product {
+  font-weight: bold;
+  font-size: 16px;
+  color: rgb(51, 51, 51);
+  line-height: 21px;
+}
+
+.cart-popup_count-box {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  border: 1px solid rgb(221, 223, 225);
+}
+
+.cart-popup_count-box button {
+  border: none;
+  background-color: transparent;
+  font-size: 18px;
+  cursor: pointer;
+  padding: 5px 10px;
+}
+
+.cart-popup_count-total {
+  font-size: 16px;
+  margin: 0 10px;
+}
+
+.cart-popup_totals {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.cart-popup_price {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.cart-popup_info {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 0;
+  margin: 5px 0;
+}
+
+.cart-popup_info p {
+  font-size: 14px;
+  line-height: 1.33;
+  color: rgb(51, 51, 51);
+}
+
+.cart-popup_save-tag {
+  width: 38px;
+  height: 20px;
+  margin-right: 6px;
+  padding: 3px 8px;
+  border-radius: 9px;
+  background-color: rgb(255, 191, 0);
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 20px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+.cart-popup_buttons {
+  display: flex;
+  flex-direction: row;
+}
+
+.cart-popup_cancel-button {
+  width: 50%;
+  margin: 0px 4px;
+  display: block;
+  padding: 0px 10px;
+  text-align: center;
+  overflow: hidden;
+  width: 100%;
+  height: 52px;
+  border-radius: 3px;
+  color: rgb(51, 51, 51);
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(221, 221, 221);
+}
+
+.cart-popup_add-button {
+  width: 50%;
+  margin: 0px 4px;
+  display: block;
+  padding: 0px 10px;
+  text-align: center;
+  overflow: hidden;
+  width: 100%;
+  height: 52px;
+  border-radius: 3px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(95, 0, 128);
+  border: 0px none;
+}
