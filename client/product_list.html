@@ -122,7 +122,7 @@
           <a href="#" class="menu__link">알뜰쇼핑</a>
         </li>
         <li class="nav-menu__item">
-          <a href="#" class="menu__link">특가/혜택</a>
+          <a href="./special_price.html" class="menu__link">특가/혜택</a>
         </li>
 
         <button type="button" class="notice-btn">
@@ -132,349 +132,352 @@
     </nav>
 
     <!-- product List Start -->
-    <section id="product-list" class="product-list">
-      <div class="accordion">
-        <div class="product-list_filter">
-          <span>필터</span>
-          <button>초기화</button>
-        </div>
-
-        <!-- 카테고리 -->
-        <div class="category-wrapper">
-          <div class="category-header">
-            <button class="toggle-btn">
-              <span class="category-title">카테고리</span>
-            </button>
+    <section class="product-list_wrapper">
+      <h3>베스트</h3>
+      <div id="product-list" class="product-list">
+        <div class="accordion">
+          <div class="product-list_filter">
+            <span>필터</span>
+            <button>초기화</button>
           </div>
 
-          <ul class="product-list_nav">
-            <li tabindex="0" class="filter_accordion-list">
-              <input type="checkbox" id="category-check01" />
-              <label for="category-check01" class="checkbox-label">
-                <span class="filter_accordion-name">샐러드·간편식</span>
-                <span class="filter_accordion-amount">65</span>
-              </label>
-            </li>
-            <li tabindex="0" class="filter_accordion-list">
-              <input type="checkbox" id="category-check02" />
-              <label for="category-check02" class="checkbox-label">
-                <span class="filter_accordion-name">국·반찬·메인요리</span>
-                <span class="filter_accordion-amount">52</span>
-              </label>
-            </li>
-            <li tabindex="0" class="filter_accordion-list">
-              <input type="checkbox" id="category-check03" />
-              <label for="category-check03" class="checkbox-label">
-                <span class="filter_accordion-name">정육·계란</span>
-                <span class="filter_accordion-amount">41</span>
-              </label>
-            </li>
-            <li tabindex="0" class="filter_accordion-list">
-              <input type="checkbox" id="category-check04" />
-              <label for="category-check04" class="checkbox-label">
-                <span class="filter_accordion-name">과일·견과·쌀</span>
-                <span class="filter_accordion-amount">30</span>
-              </label>
-            </li>
-            <li tabindex="0" class="filter_accordion-list">
-              <input type="checkbox" id="category-check05" />
-              <label for="category-check05" class="checkbox-label">
-                <span class="filter_accordion-name">간식·과자·떡</span>
-                <span class="filter_accordion-amount">18</span>
-              </label>
-            </li>
-            <li tabindex="0" class="filter_accordion-list">
-              <input type="checkbox" id="category-check06" />
-              <label for="category-check06" class="checkbox-label">
-                <span class="filter_accordion-name">생수·음료·우유·커피</span>
-                <span class="filter_accordion-amount">17</span>
-              </label>
-            </li>
-            <li tabindex="0" class="filter_accordion-list">
-              <input type="checkbox" id="category-check07" />
-              <label for="category-check07" class="checkbox-label">
-                <span class="filter_accordion-name">수산·해산·건어물</span>
-                <span class="filter_accordion-amount">16</span>
-              </label>
-            </li>
-            <li tabindex="0" class="filter_accordion-list">
-              <input type="checkbox" id="category-check08" />
-              <label for="category-check08" class="checkbox-label">
-                <span class="filter_accordion-name">베이커리·치즈·델리</span>
-                <span class="filter_accordion-amount">13</span>
-              </label>
-            </li>
-            <li tabindex="0" class="filter_accordion-list">
-              <input type="checkbox" id="category-check09" />
-              <label for="category-check09" class="checkbox-label">
-                <span class="filter_accordion-name">건강식품</span>
-                <span class="filter_accordion-amount">10</span>
-              </label>
-            </li>
-            <li tabindex="0" class="filter_accordion-list">
-              <input type="checkbox" id="category-check10" />
-              <label for="category-check10" class="checkbox-label">
-                <span class="filter_accordion-name">생활용품·리빙·캠핑</span>
-                <span class="filter_accordion-amount">10</span>
-              </label>
-            </li>
-            <li tabindex="0" class="filter_accordion-more">
-              <span class="filter_accordion-amount">카테고리 더보기 ></span>
-            </li>
-          </ul>
-        </div>
+          <!-- 카테고리 -->
+          <div class="category-wrapper">
+            <div class="category-header">
+              <button class="toggle-btn">
+                <span class="category-title">카테고리</span>
+              </button>
+            </div>
 
-        <!-- 브랜드 -->
-        <div class="category-wrapper">
-          <div>
-            <button class="toggle-btn">
-              <span class="category-title">브랜드</span>
-            </button>
+            <ul class="product-list_nav">
+              <li tabindex="0" class="filter_accordion-list">
+                <input type="checkbox" id="category-check01" />
+                <label for="category-check01" class="checkbox-label">
+                  <span class="filter_accordion-name">샐러드·간편식</span>
+                  <span class="filter_accordion-amount">65</span>
+                </label>
+              </li>
+              <li tabindex="0" class="filter_accordion-list">
+                <input type="checkbox" id="category-check02" />
+                <label for="category-check02" class="checkbox-label">
+                  <span class="filter_accordion-name">국·반찬·메인요리</span>
+                  <span class="filter_accordion-amount">52</span>
+                </label>
+              </li>
+              <li tabindex="0" class="filter_accordion-list">
+                <input type="checkbox" id="category-check03" />
+                <label for="category-check03" class="checkbox-label">
+                  <span class="filter_accordion-name">정육·계란</span>
+                  <span class="filter_accordion-amount">41</span>
+                </label>
+              </li>
+              <li tabindex="0" class="filter_accordion-list">
+                <input type="checkbox" id="category-check04" />
+                <label for="category-check04" class="checkbox-label">
+                  <span class="filter_accordion-name">과일·견과·쌀</span>
+                  <span class="filter_accordion-amount">30</span>
+                </label>
+              </li>
+              <li tabindex="0" class="filter_accordion-list">
+                <input type="checkbox" id="category-check05" />
+                <label for="category-check05" class="checkbox-label">
+                  <span class="filter_accordion-name">간식·과자·떡</span>
+                  <span class="filter_accordion-amount">18</span>
+                </label>
+              </li>
+              <li tabindex="0" class="filter_accordion-list">
+                <input type="checkbox" id="category-check06" />
+                <label for="category-check06" class="checkbox-label">
+                  <span class="filter_accordion-name">생수·음료·우유·커피</span>
+                  <span class="filter_accordion-amount">17</span>
+                </label>
+              </li>
+              <li tabindex="0" class="filter_accordion-list">
+                <input type="checkbox" id="category-check07" />
+                <label for="category-check07" class="checkbox-label">
+                  <span class="filter_accordion-name">수산·해산·건어물</span>
+                  <span class="filter_accordion-amount">16</span>
+                </label>
+              </li>
+              <li tabindex="0" class="filter_accordion-list">
+                <input type="checkbox" id="category-check08" />
+                <label for="category-check08" class="checkbox-label">
+                  <span class="filter_accordion-name">베이커리·치즈·델리</span>
+                  <span class="filter_accordion-amount">13</span>
+                </label>
+              </li>
+              <li tabindex="0" class="filter_accordion-list">
+                <input type="checkbox" id="category-check09" />
+                <label for="category-check09" class="checkbox-label">
+                  <span class="filter_accordion-name">건강식품</span>
+                  <span class="filter_accordion-amount">10</span>
+                </label>
+              </li>
+              <li tabindex="0" class="filter_accordion-list">
+                <input type="checkbox" id="category-check10" />
+                <label for="category-check10" class="checkbox-label">
+                  <span class="filter_accordion-name">생활용품·리빙·캠핑</span>
+                  <span class="filter_accordion-amount">10</span>
+                </label>
+              </li>
+              <li tabindex="0" class="filter_accordion-more">
+                <span class="filter_accordion-amount">카테고리 더보기 ></span>
+              </li>
+            </ul>
           </div>
 
-          <ul class="product-list_nav">
-            <li tabindex="0" class="filter_accordion-list">
-              <input type="checkbox" id="brand-check01" />
-              <label for="brand-check01" class="checkbox-label">
-                <span class="filter_accordion-name">감자밭</span>
-                <span class="filter_accordion-amount">1</span>
-              </label>
-            </li>
-            <li tabindex="0" class="filter_accordion-list">
-              <input type="checkbox" id="brand-check02" />
-              <label for="brand-check02" class="checkbox-label">
-                <span class="filter_accordion-name">강남면옥</span>
-                <span class="filter_accordion-amount">1</span>
-              </label>
-            </li>
-            <li tabindex="0" class="filter_accordion-list">
-              <input type="checkbox" id="brand-check03" />
-              <label for="brand-check03" class="checkbox-label">
-                <span class="filter_accordion-name">경남제약</span>
-                <span class="filter_accordion-amount">1</span>
-              </label>
-            </li>
-            <li tabindex="0" class="filter_accordion-list">
-              <input type="checkbox" id="brandcheck04" />
-              <label for="brand-check04" class="checkbox-label">
-                <span class="filter_accordion-name">경복궁</span>
-                <span class="filter_accordion-amount">1</span>
-              </label>
-            </li>
-            <li tabindex="0" class="filter_accordion-list">
-              <input type="checkbox" id="brand-check05" />
-              <label for="brand-check05" class="checkbox-label">
-                <span class="filter_accordion-name">고래사</span>
-                <span class="filter_accordion-amount">1</span>
-              </label>
-            </li>
-            <li tabindex="0" class="filter_accordion-list">
-              <input type="checkbox" id="brand-check06" />
-              <label for="brand-check06" class="checkbox-label">
-                <span class="filter_accordion-name">고메공방</span>
-                <span class="filter_accordion-amount">1</span>
-              </label>
-            </li>
-            <li tabindex="0" class="filter_accordion-list">
-              <input type="checkbox" id="brand-check07" />
-              <label for="brand-check07" class="checkbox-label">
-                <span class="filter_accordion-name">고온어다이어트</span>
-                <span class="filter_accordion-amount">1</span>
-              </label>
-            </li>
-            <li tabindex="0" class="filter_accordion-list">
-              <input type="checkbox" id="brand-check08" />
-              <label for="brand-check08" class="checkbox-label">
-                <span class="filter_accordion-name">교토마블</span>
-                <span class="filter_accordion-amount">1</span>
-              </label>
-            </li>
-            <li tabindex="0" class="filter_accordion-list">
-              <input type="checkbox" id="brand-check09" />
-              <label for="brand-check09" class="checkbox-label">
-                <span class="filter_accordion-name">그래놀라 하우스</span>
-                <span class="filter_accordion-amount">1</span>
-              </label>
-            </li>
-            <li tabindex="0" class="filter_accordion-list">
-              <input type="checkbox" id="brand-check10" />
-              <label for="brand-check10" class="checkbox-label">
-                <span class="filter_accordion-name">그리츠 시그니처 램</span>
-                <span class="filter_accordion-amount">1</span>
-              </label>
-            </li>
-            <li tabindex="0" class="filter_accordion-more">
-              <span class="filter_accordion-amount">브랜드 더보기 ></span>
-            </li>
-          </ul>
-        </div>
+          <!-- 브랜드 -->
+          <div class="category-wrapper">
+            <div>
+              <button class="toggle-btn">
+                <span class="category-title">브랜드</span>
+              </button>
+            </div>
 
-        <!-- 가격 -->
-        <div class="category-wrapper">
-          <div class="category-header">
-            <button class="toggle-btn">
-              <span class="category-title">가격</span>
-            </button>
+            <ul class="product-list_nav">
+              <li tabindex="0" class="filter_accordion-list">
+                <input type="checkbox" id="brand-check01" />
+                <label for="brand-check01" class="checkbox-label">
+                  <span class="filter_accordion-name">감자밭</span>
+                  <span class="filter_accordion-amount">1</span>
+                </label>
+              </li>
+              <li tabindex="0" class="filter_accordion-list">
+                <input type="checkbox" id="brand-check02" />
+                <label for="brand-check02" class="checkbox-label">
+                  <span class="filter_accordion-name">강남면옥</span>
+                  <span class="filter_accordion-amount">1</span>
+                </label>
+              </li>
+              <li tabindex="0" class="filter_accordion-list">
+                <input type="checkbox" id="brand-check03" />
+                <label for="brand-check03" class="checkbox-label">
+                  <span class="filter_accordion-name">경남제약</span>
+                  <span class="filter_accordion-amount">1</span>
+                </label>
+              </li>
+              <li tabindex="0" class="filter_accordion-list">
+                <input type="checkbox" id="brandcheck04" />
+                <label for="brand-check04" class="checkbox-label">
+                  <span class="filter_accordion-name">경복궁</span>
+                  <span class="filter_accordion-amount">1</span>
+                </label>
+              </li>
+              <li tabindex="0" class="filter_accordion-list">
+                <input type="checkbox" id="brand-check05" />
+                <label for="brand-check05" class="checkbox-label">
+                  <span class="filter_accordion-name">고래사</span>
+                  <span class="filter_accordion-amount">1</span>
+                </label>
+              </li>
+              <li tabindex="0" class="filter_accordion-list">
+                <input type="checkbox" id="brand-check06" />
+                <label for="brand-check06" class="checkbox-label">
+                  <span class="filter_accordion-name">고메공방</span>
+                  <span class="filter_accordion-amount">1</span>
+                </label>
+              </li>
+              <li tabindex="0" class="filter_accordion-list">
+                <input type="checkbox" id="brand-check07" />
+                <label for="brand-check07" class="checkbox-label">
+                  <span class="filter_accordion-name">고온어다이어트</span>
+                  <span class="filter_accordion-amount">1</span>
+                </label>
+              </li>
+              <li tabindex="0" class="filter_accordion-list">
+                <input type="checkbox" id="brand-check08" />
+                <label for="brand-check08" class="checkbox-label">
+                  <span class="filter_accordion-name">교토마블</span>
+                  <span class="filter_accordion-amount">1</span>
+                </label>
+              </li>
+              <li tabindex="0" class="filter_accordion-list">
+                <input type="checkbox" id="brand-check09" />
+                <label for="brand-check09" class="checkbox-label">
+                  <span class="filter_accordion-name">그래놀라 하우스</span>
+                  <span class="filter_accordion-amount">1</span>
+                </label>
+              </li>
+              <li tabindex="0" class="filter_accordion-list">
+                <input type="checkbox" id="brand-check10" />
+                <label for="brand-check10" class="checkbox-label">
+                  <span class="filter_accordion-name">그리츠 시그니처 램</span>
+                  <span class="filter_accordion-amount">1</span>
+                </label>
+              </li>
+              <li tabindex="0" class="filter_accordion-more">
+                <span class="filter_accordion-amount">브랜드 더보기 ></span>
+              </li>
+            </ul>
           </div>
 
-          <ul class="product-list_nav">
-            <li tabindex="0" class="filter_accordion-list">
-              <input type="checkbox" id="price-check01" />
-              <label for="price-check01" class="checkbox-label">
-                <span class="filter_accordion-name">7,900원 미만</span>
-                <span class="filter_accordion-amount">71</span>
-              </label>
-            </li>
-            <li tabindex="0" class="filter_accordion-list">
-              <input type="checkbox" id="price-check02" />
-              <label for="price-check02" class="checkbox-label">
-                <span class="filter_accordion-name">7,900원 ~ 11,800원</span>
-                <span class="filter_accordion-amount">78</span>
-              </label>
-            </li>
-            <li tabindex="0" class="filter_accordion-list">
-              <input type="checkbox" id="pricecheck03" />
-              <label for="price-check03" class="checkbox-label">
-                <span class="filter_accordion-name">11,800원 ~ 15,900원</span>
-                <span class="filter_accordion-amount">73</span>
-              </label>
-            </li>
+          <!-- 가격 -->
+          <div class="category-wrapper">
+            <div class="category-header">
+              <button class="toggle-btn">
+                <span class="category-title">가격</span>
+              </button>
+            </div>
 
-            <li tabindex="0" class="filter_accordion-list">
-              <input type="checkbox" id="price-check07" />
-              <label for="price-check07" class="checkbox-label">
-                <span class="filter_accordion-name">15,900원 이상</span>
-                <span class="filter_accordion-amount">76</span>
-              </label>
-            </li>
-          </ul>
-        </div>
+            <ul class="product-list_nav">
+              <li tabindex="0" class="filter_accordion-list">
+                <input type="checkbox" id="price-check01" />
+                <label for="price-check01" class="checkbox-label">
+                  <span class="filter_accordion-name">7,900원 미만</span>
+                  <span class="filter_accordion-amount">71</span>
+                </label>
+              </li>
+              <li tabindex="0" class="filter_accordion-list">
+                <input type="checkbox" id="price-check02" />
+                <label for="price-check02" class="checkbox-label">
+                  <span class="filter_accordion-name">7,900원 ~ 11,800원</span>
+                  <span class="filter_accordion-amount">78</span>
+                </label>
+              </li>
+              <li tabindex="0" class="filter_accordion-list">
+                <input type="checkbox" id="pricecheck03" />
+                <label for="price-check03" class="checkbox-label">
+                  <span class="filter_accordion-name">11,800원 ~ 15,900원</span>
+                  <span class="filter_accordion-amount">73</span>
+                </label>
+              </li>
 
-        <!-- 혜택 -->
-        <div class="category-wrapper">
-          <div class="category-header">
-            <button class="toggle-btn">
-              <span class="category-title">혜택</span>
-            </button>
+              <li tabindex="0" class="filter_accordion-list">
+                <input type="checkbox" id="price-check07" />
+                <label for="price-check07" class="checkbox-label">
+                  <span class="filter_accordion-name">15,900원 이상</span>
+                  <span class="filter_accordion-amount">76</span>
+                </label>
+              </li>
+            </ul>
           </div>
 
-          <ul class="product-list_nav">
-            <li tabindex="0" class="filter_accordion-list">
-              <input type="checkbox" id="benefit-check04" />
-              <label for="benefit-check04" class="checkbox-label">
-                <span class="filter_accordion-name">할인 상품</span>
-                <span class="filter_accordion-amount">130</span>
-              </label>
-            </li>
-            <li tabindex="0" class="filter_accordion-list">
-              <input type="checkbox" id="benefit-check05" />
-              <label for="benefit-check05" class="checkbox-label">
-                <span class="filter_accordion-name">한정 수량</span>
-                <span class="filter_accordion-amount">2</span>
-              </label>
-            </li>
-          </ul>
-        </div>
+          <!-- 혜택 -->
+          <div class="category-wrapper">
+            <div class="category-header">
+              <button class="toggle-btn">
+                <span class="category-title">혜택</span>
+              </button>
+            </div>
 
-        <!-- 유형-->
-        <div class="category-wrapper">
-          <div class="category-header">
-            <button class="toggle-btn">
-              <span class="category-title">유형</span>
-            </button>
+            <ul class="product-list_nav">
+              <li tabindex="0" class="filter_accordion-list">
+                <input type="checkbox" id="benefit-check04" />
+                <label for="benefit-check04" class="checkbox-label">
+                  <span class="filter_accordion-name">할인 상품</span>
+                  <span class="filter_accordion-amount">130</span>
+                </label>
+              </li>
+              <li tabindex="0" class="filter_accordion-list">
+                <input type="checkbox" id="benefit-check05" />
+                <label for="benefit-check05" class="checkbox-label">
+                  <span class="filter_accordion-name">한정 수량</span>
+                  <span class="filter_accordion-amount">2</span>
+                </label>
+              </li>
+            </ul>
           </div>
 
-          <ul class="product-list_nav">
-            <li tabindex="0" class="filter_accordion-list">
-              <input type="checkbox" id="typec-heck01" />
-              <label for="type-check01" class="checkbox-label">
-                <span class="filter_accordion-name">Karly Only</span>
-                <span class="filter_accordion-amount">106</span>
-              </label>
-            </li>
-            <li tabindex="0" class="filter_accordion-list">
-              <input type="checkbox" id="type-check02" />
-              <label for="type-check02" class="checkbox-label">
-                <span class="filter_accordion-name">희소가치 프로젝트</span>
-                <span class="filter_accordion-amount">8</span>
-              </label>
-            </li>
-          </ul>
-        </div>
+          <!-- 유형-->
+          <div class="category-wrapper">
+            <div class="category-header">
+              <button class="toggle-btn">
+                <span class="category-title">유형</span>
+              </button>
+            </div>
 
-        <!-- 특정 상품 제외 -->
-        <div class="category-wrapper">
-          <div class="category-header">
-            <button class="toggle-btn">
-              <span class="category-title">특정상품 제외</span>
-            </button>
+            <ul class="product-list_nav">
+              <li tabindex="0" class="filter_accordion-list">
+                <input type="checkbox" id="typec-heck01" />
+                <label for="type-check01" class="checkbox-label">
+                  <span class="filter_accordion-name">Karly Only</span>
+                  <span class="filter_accordion-amount">106</span>
+                </label>
+              </li>
+              <li tabindex="0" class="filter_accordion-list">
+                <input type="checkbox" id="type-check02" />
+                <label for="type-check02" class="checkbox-label">
+                  <span class="filter_accordion-name">희소가치 프로젝트</span>
+                  <span class="filter_accordion-amount">8</span>
+                </label>
+              </li>
+            </ul>
           </div>
 
-          <ul class="product-list_nav">
-            <li tabindex="0" class="filter_accordion-list">
-              <input type="checkbox" id="product-check01" />
-              <label for="product-check01" class="checkbox-label">
-                <span class="filter_accordion-name">반려동물 상품</span>
-                <span class="filter_accordion-amount">5</span>
-              </label>
-            </li>
-          </ul>
-        </div>
-      </div>
+          <!-- 특정 상품 제외 -->
+          <div class="category-wrapper">
+            <div class="category-header">
+              <button class="toggle-btn">
+                <span class="category-title">특정상품 제외</span>
+              </button>
+            </div>
 
-      <!-- section 2 -->
-      <div class="best-wrapper">
-        <div class="best-nav">
-          <p class="best-total_amount">총 284건</p>
-          <ul class="best-list">
-            <li><a href="#" class="sort-option">추천순</a></li>
-            <li><a href="#" class="sort-option">신상품순</a></li>
-            <li><a href="#" class="sort-option">판매량순</a></li>
-            <li><a href="#" class="sort-option">혜택순</a></li>
-            <li><a href="#" class="sort-option">낮은 가격순</a></li>
-            <li><a href="#" class="sort-option">높은 가격순</a></li>
-          </ul>
+            <ul class="product-list_nav">
+              <li tabindex="0" class="filter_accordion-list">
+                <input type="checkbox" id="product-check01" />
+                <label for="product-check01" class="checkbox-label">
+                  <span class="filter_accordion-name">반려동물 상품</span>
+                  <span class="filter_accordion-amount">5</span>
+                </label>
+              </li>
+            </ul>
+          </div>
         </div>
 
-        <!-- 상품 리스트 -->
-        <div class="best-container"></div>
+        <!-- section 2 -->
+        <div class="best-wrapper">
+          <div class="best-nav">
+            <p class="best-total_amount">총 284건</p>
+            <ul class="best-list">
+              <li><a href="#" class="sort-option">추천순</a></li>
+              <li><a href="#" class="sort-option">신상품순</a></li>
+              <li><a href="#" class="sort-option">판매량순</a></li>
+              <li><a href="#" class="sort-option">혜택순</a></li>
+              <li><a href="#" class="sort-option">낮은 가격순</a></li>
+              <li><a href="#" class="sort-option">높은 가격순</a></li>
+            </ul>
+          </div>
 
-        <!-- 장바구니 팝업 -->
-        <div
-          role="dialog"
-          aria-labelledby="cartPopupTitle"
-          class="cart-popup_wrapper"
-        ></div>
+          <!-- 상품 리스트 -->
+          <div class="best-container"></div>
 
-        <!-- 페이지 네이션 -->
-        <div class="best-pagenation">
-          <button class="pg-btn">
-            <img
-              src="./assets/icons/page-left01.png"
-              alt="처음 페이지로 이동 "
-            />
-          </button>
-          <button class="pg-btn">
-            <img
-              src="./assets/icons/page-left02.png"
-              alt="이전 페이지로 이동 "
-            />
-          </button>
-          <a href="#" class="pg-btn">1</a>
-          <a href="#" class="pg-btn">2</a>
-          <a href="#" class="pg-btn">3</a>
-          <button class="pg-btn">
-            <img
-              src="./assets/icons/page-right01.png"
-              alt="다음 페이지로 이동"
-            />
-          </button>
-          <button class="pg-btn">
-            <img
-              src="./assets/icons/page-right02.png"
-              alt="마지막 페이지로 이동"
-            />
-          </button>
+          <!-- 장바구니 팝업 -->
+          <div
+            role="dialog"
+            aria-labelledby="cartPopupTitle"
+            class="cart-popup_wrapper"
+          ></div>
+
+          <!-- 페이지 네이션 -->
+          <div class="best-pagenation">
+            <button class="pg-btn">
+              <img
+                src="./assets/icons/page-left01.png"
+                alt="처음 페이지로 이동 "
+              />
+            </button>
+            <button class="pg-btn">
+              <img
+                src="./assets/icons/page-left02.png"
+                alt="이전 페이지로 이동 "
+              />
+            </button>
+            <a href="#" class="pg-btn">1</a>
+            <a href="#" class="pg-btn">2</a>
+            <a href="#" class="pg-btn">3</a>
+            <button class="pg-btn">
+              <img
+                src="./assets/icons/page-right01.png"
+                alt="다음 페이지로 이동"
+              />
+            </button>
+            <button class="pg-btn">
+              <img
+                src="./assets/icons/page-right02.png"
+                alt="마지막 페이지로 이동"
+              />
+            </button>
+          </div>
         </div>
       </div>
     </section>
