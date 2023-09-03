@@ -1,14 +1,16 @@
+import { getNode, getNodes } from "../../lib/index.js";
 import { productsList } from "../data/productListData.js";
 
 // DOM 요소 선택
-const listItems = document.querySelectorAll(".best-list li");
-const sortOptions = document.querySelectorAll(".sort-option");
-const toggleButtons = document.querySelectorAll(".toggle-btn");
-const productList = document.querySelector(".product-list_nav");
-const bestList = document.querySelector(".best-container");
-const cartPopup = document.querySelector(".cart-popup_wrapper");
-const cartCancelBtn = document.querySelector(".cart-popup_cancel-button");
-const cartWrapper = document.querySelector(".cart-popup_wrapper");
+const listItems = getNodes(".best-list li");
+const sortOptions = getNodes(".sort-option");
+const toggleButtons = getNodes(".toggle-btn");
+const productList = getNode(".product-list_nav");
+const bestList = getNode(".best-container");
+const cartCancelBtn = getNode(".cart-popup_cancel-button");
+const cartWrapper = getNode(".cart-popup_wrapper");
+const cartPlusBtn = getNode(".cart-popup_count-plus");
+const cartMinusBtn = getNode(".cart-popup_count-minus");
 
 // 메뉴 클릭 토글 함수
 function toggleListNav(e) {
@@ -74,7 +76,9 @@ function generateBestItem(product) {
      <a href="#">
       <figure class="best-img_wrapper">
        <div class="image-container">
-        <img src="${product.imageUrl}" alt="" class="best-product_img" />
+        <img src="${product.imageUrl}" alt="${
+    product.alt
+  }" class="best-product_img" />
       </div>
         <button class="best-cart_btn">
           <img
@@ -153,7 +157,7 @@ function generateCartPopup(item) {
               <div class="cart-popup_content-middle">
                 <div class="cart-popup_totals">
                   <p class="cart-popup_sum">합계</p>
-                  <p><span class="cart-popup_price">4,980</span>원</p>
+                  <p><span class="cart-popup_price">4980</span>원</p>
                 </div>
 
                 <div class="cart-popup_info">
@@ -201,20 +205,57 @@ function showCartPopup() {
   const cartCancelBtn = document.querySelector(".cart-popup_cancel-button");
   cartCancelBtn.addEventListener("click", hideCartPopup);
 }
-
 // 팝업을 닫는 함수
 function hideCartPopup() {
-  cartPopup.classList.remove("show");
+  cartWrapper.classList.remove("show");
 }
 
-generateCartPopup();
+function updateTotalPrice(quantity) {
+  const priceElement = document.querySelector(".cart-popup_product");
+  const totalPriceElement = document.querySelector(".cart-popup_price");
+  const price = parseInt(
+    priceElement.textContent.replace(/,/g, "").replace("원", ""),
+    10
+  );
 
+  totalPriceElement.textContent = (price * quantity).toLocaleString();
+}
+
+function initializeQuantityButtons() {
+  const minusButton = document.querySelector(".cart-popup_count-minus");
+  const plusButton = document.querySelector(".cart-popup_count-plus");
+  const quantityElement = document.querySelector(".cart-popup_count-total");
+
+  minusButton.addEventListener("click", () => {
+    let currentQuantity = parseInt(quantityElement.textContent, 10);
+    if (currentQuantity > 1) {
+      currentQuantity -= 1;
+      quantityElement.textContent = currentQuantity;
+      updateTotalPrice(currentQuantity);
+    }
+  });
+
+  plusButton.addEventListener("click", () => {
+    let currentQuantity = parseInt(quantityElement.textContent, 10);
+    currentQuantity += 1;
+    quantityElement.textContent = currentQuantity;
+    updateTotalPrice(currentQuantity);
+  });
+}
+
+// 기존의 initializeCartButtons 함수에 추가합니다.
 function initializeCartButtons() {
+  // 기존 코드는 그대로 둡니다.
   const cartBtns = document.querySelectorAll(".best-cart_btn");
   cartBtns.forEach((cartBtn) => {
     cartBtn.addEventListener("click", showCartPopup);
   });
+
+  // 추가된 함수를 실행합니다.
+  initializeQuantityButtons();
 }
+
+generateCartPopup();
 
 // ---------------------------------------------------------------
 initializeToggleButtons();
