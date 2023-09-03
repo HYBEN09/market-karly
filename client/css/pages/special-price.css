@@ -1,0 +1,9 @@
+.special_price {
+  width: 1050px;
+  margin: 15px auto;
+}
+
+.special__link {
+  margin-bottom: 10px;
+  background-color: rgb(244, 244, 244);
+}
