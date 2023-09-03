@@ -2,6 +2,7 @@ export const productsList = [
   {
     id: "tang-1",
     imageUrl: "../../assets/product/product01.png",
+    alt: "탱탱쫄면 이미지",
     productName: "[풀무원] 탱탱쫄면(4개입)",
     price: "4,980원",
     productInfo: "튀기지 않아 부담없는 매콤함",
@@ -10,6 +11,7 @@ export const productsList = [
   {
     id: "sika-2",
     imageUrl: "../../assets/product/product02.png",
+    alt: "죠르디 시카 자석 선쿠션 이미지",
     productName: "[온더바디] 죠르디 시카 자석 선쿠션",
     price: "32,500",
     productInfo: "끈적임 없이 보송한 무기자차 선쿠션",
@@ -17,6 +19,7 @@ export const productsList = [
   {
     id: "milky-3",
     imageUrl: "../../assets/product/product03.png",
+    alt: "유기농 밀키 프린스 이미지",
     productName: "유기농 밀키 프린스",
     price: "25,000원",
     productInfo: "영양가득 현미로 즐기는 신품종 유기농 쌀",
@@ -25,6 +28,7 @@ export const productsList = [
   {
     id: "laundry-4",
     imageUrl: "../../assets/product/product04.png",
+    alt: "베이비 세탁세 이미지",
     productName: "[프로쉬] 베이비 세탁세",
     price: "18900원",
     productInfo: "성분을 꼼꼼히 따져 골라 더욱 편안한",
@@ -34,6 +38,7 @@ export const productsList = [
   {
     id: "galbi-5",
     imageUrl: "../../assets/product/product05.png",
+    alt: "갈비탕 이미지",
     productName: "[사미현] 갈비탕",
     price: "12000원",
     productInfo: "진짜 갈비로 우려낸 전통 갈비탕",
@@ -41,6 +46,7 @@ export const productsList = [
   {
     id: "noodle-6",
     imageUrl: "../../assets/product/product06.png",
+    alt: "메밀국수 이미지",
     productName: "[광화문 미진] 메밀국수 (2인분)",
     price: "9,900원",
     productInfo: "집에서 만나는 메밀 명가",
@@ -49,6 +55,7 @@ export const productsList = [
   {
     id: "bulgogi-7",
     imageUrl: "../../assets/product/product07.png",
+    alt: "양념 소불고기 이미지",
     productName: "[KF365] 양념 소불고기 1kg (냉장)",
     price: "18,900원",
     productInfo: "100g당 가격: 1,899원",
@@ -57,6 +64,7 @@ export const productsList = [
   {
     id: "egg-8",
     imageUrl: "../../assets/product/product08.png",
+    alt: "1+등급 무항생제 특란 이미지",
     productName: "[KF365] 1+등급 무항생제 특란 20구",
     price: "7,300원",
     productInfo: "1구 당 판매가: 365원",
@@ -65,6 +73,7 @@ export const productsList = [
   {
     id: "grape-9",
     imageUrl: "../../assets/product/product09.png",
+    alt: "샤인머스캣 이미지",
     productName: "향기가득 샤인머스캣 1송이",
     price: "12,900원",
     productInfo: "연두빛으로 영근 달콤함 한 알",
